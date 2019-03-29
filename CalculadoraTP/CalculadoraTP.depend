@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1553872073 source:c:\users\alumno\desktop\calculadoratp\calculadoratp\main.c
+	<stdio.h>
+	<stdlib.h>
+
