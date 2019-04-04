@@ -3,7 +3,6 @@
 #include "funciones_calculadora.h"
 #include "menu.h"
 
-
 int main()
 {
     int opcion;
@@ -22,6 +21,7 @@ int main()
 
     do
     {
+
         printf("\n         ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป");
         printf("\n         บ               :: C A L C U L A D O R A EN C ::            บ");
         printf("\n         ฬอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน \n");
@@ -32,14 +32,14 @@ int main()
         {
         case 1:
             flagIngreso = 1;
-            printf("\n         -> Ingrese Primer operando A=%.2f: ", a);
+            printf("\n         -> Ingrese Primer operando A: ");
             scanf("%f", &a);
             fflush(stdin);
             break;
         case 2:
             if(flagIngreso == 1)
             {
-                printf("\n         -> Ingrese Segundo operando B=%.2f: ", b);
+                printf("\n         -> Ingrese Segundo operando B: ");
                 scanf("%f", &b);
                 fflush(stdin);
                 flagCalcular = 1;

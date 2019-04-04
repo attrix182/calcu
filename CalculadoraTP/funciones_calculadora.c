@@ -32,6 +32,4 @@ double factorial (double numero)
 
     }
     return acumulador;
-
-
 }

@@ -1,7 +1,7 @@
 /** \brief Muestra un menu de opciones
  *
- * \param valorActual1 float Ultimo primer operando
- * \param valorActual2 float Ultimo segundo operando
+ * \param valorActual1 float Ultimo valor de primer operando
+ * \param valorActual2 float Ultimo valor de segundo operando
  * \return int Opcion seleccionada
  *
  */
