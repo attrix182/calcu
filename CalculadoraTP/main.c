@@ -6,17 +6,17 @@
 int main()
 {
     int opcion;
+    int flagIngreso = 0;
+    int flagCalcular = 0;
+    int flagCalculosListos = 0;
+    float a = 0;
+    float b = 0;
     float suma;
     float resta;
     float division;
     float multiplicacion;
     double factorialA;
     double factorialB;
-    float a = 0;
-    float b = 0;
-    int flagIngreso = 0;
-    int flagCalcular = 0;
-    int flagCalculosListos = 0;
     char seguir = 's';
 
     do
@@ -31,10 +31,10 @@ int main()
         switch(opcion)
         {
         case 1:
-            flagIngreso = 1;
             printf("\n         -> Ingrese Primer operando A: ");
             scanf("%f", &a);
             fflush(stdin);
+            flagIngreso = 1;
             break;
         case 2:
             if(flagIngreso == 1)
@@ -53,7 +53,6 @@ int main()
         case 3:
             if (flagCalcular == 1)
             {
-                printf("Calculado las operaciones...\n");
                 suma = sumar(a, b);
                 resta = restar(a, b);
                 multiplicacion = multiplicar(a, b);
@@ -61,6 +60,7 @@ int main()
                 factorialA = factorial(a);
                 factorialB = factorial(b);
                 flagCalculosListos = 1;
+                printf("Operaciones calculadas, digite 4 para ver los resultados...\n");
                 break;
             }
             else
